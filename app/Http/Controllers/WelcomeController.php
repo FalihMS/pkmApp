@@ -30,7 +30,11 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+		return redirect('admin/dashboard');
 	}
 
+	public function admin()
+	{
+		return view('admin.dashboard');
+	}
 }
